@@ -9,22 +9,20 @@ import {
   ProductPrice,
   SmallCardContainer,
 } from "./ProductCardStyle";
+import { formatPrice } from "../../utils/formatPrice";
 
-const ProductCard = () => {
+const ProductCard = ({ img, title, price, category, name }) => {
   return (
     <CardContainer>
-      <CardImg
-        src="https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/campari_qitapq.jpg"
-        alt=""
-      />
-      <InfoCardContainer>
-        <ProductName>Campari</ProductName>
-        <ProductCategory>Aperitivo</ProductCategory>
-        <ProductPrice>$899</ProductPrice>
-        <SmallCardContainer>
-          <AddCartButton>Agregar</AddCartButton>
-        </SmallCardContainer>
-      </InfoCardContainer>
+      <SmallCardContainer>
+        <CardImg src={img} alt={name} />
+        <InfoCardContainer>
+          <ProductName> {name} </ProductName>
+          <ProductCategory> {category} </ProductCategory>
+          <ProductPrice> {formatPrice(price)} </ProductPrice>
+        </InfoCardContainer>
+      </SmallCardContainer>
+      <AddCartButton>Agregar</AddCartButton>
     </CardContainer>
   );
 };

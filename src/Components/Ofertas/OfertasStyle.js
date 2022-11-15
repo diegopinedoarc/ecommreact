@@ -1,7 +1,8 @@
 import styled from "styled-components";
-export const CateSection = styled.section`
+
+export const OfertasContainer = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 80%;
   gap: 2rem;
 `;

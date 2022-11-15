@@ -1,4 +1,4 @@
-let stockProducts = [];
+export let stockProducts = [];
 
 let product = class {
   constructor(name, id, price, img, category, prodNumber, info) {
@@ -162,4 +162,4 @@ export const Products = stockProducts.reduce((acc, product) => {
   }
   acc[product.category] = [...acc[product.category], product];
   return acc;
-});
+}, {});
