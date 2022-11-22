@@ -1,7 +1,7 @@
 export let stockProducts = [];
 
 let product = class {
-  constructor(name, id, price, img, category, prodNumber, info) {
+  constructor(name, id, price, img, category, prodNumber, info, sale) {
     this.name = name;
     this.id = id;
     this.price = price;
@@ -9,12 +9,22 @@ let product = class {
     this.category = category;
     this.info = info;
     this.prodNumber = prodNumber;
+    this.sale = sale;
   }
 };
 
-let createAddProduct = (name, id, price, img, category, prodNumber, info) => {
+let createAddProduct = (
+  name,
+  id,
+  price,
+  img,
+  category,
+  prodNumber,
+  info,
+  sale
+) => {
   return stockProducts.push(
-    new product(name, id, price, img, category, prodNumber, info)
+    new product(name, id, price, img, category, prodNumber, info, sale)
   );
 };
 const idRandom = () => {
@@ -31,7 +41,8 @@ createAddProduct(
   7500,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/jackdanielsbotella_h63ank.jpg",
   "whiskeys",
-  1
+  1,
+  "20% OFF!"
 );
 createAddProduct(
   "Jack Daniels Honey",
@@ -39,7 +50,8 @@ createAddProduct(
   7500,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/jackdanielshonybotella_y6w6tl.png",
   "whiskeys",
-  2
+  2,
+  "20% OFF!"
 );
 createAddProduct(
   "Johnny Walker Black Label",
@@ -47,7 +59,8 @@ createAddProduct(
   8000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/johnniewalkerblackbotella_zlag0f.jpg",
   "whiskeys",
-  3
+  3,
+  "20% OFF!"
 );
 createAddProduct(
   "Johnny Walker Red Label",
@@ -55,7 +68,8 @@ createAddProduct(
   6000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126875/drinksCo/johnnywalkerrojobotella_jg44ru.webp",
   "whiskeys",
-  4
+  4,
+  "20% OFF!"
 );
 createAddProduct(
   "Johnny Walker Blue Label",
@@ -63,7 +77,8 @@ createAddProduct(
   20000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/johnnyazulbotella_qhlt9z.jpg",
   "whiskeys",
-  5
+  5,
+  "20% OFF!"
 );
 createAddProduct(
   "Glenfiddich",
@@ -71,7 +86,8 @@ createAddProduct(
   20000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/Glenfiddich12_howdiq.webp",
   "whiskeys",
-  6
+  6,
+  "20% OFF!"
 );
 createAddProduct(
   "Baileys",
@@ -79,7 +95,8 @@ createAddProduct(
   2000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126871/drinksCo/baileysbotella_dbvoxb.png",
   "licores",
-  7
+  7,
+  "20% OFF!"
 );
 createAddProduct(
   "Amarula",
@@ -87,7 +104,8 @@ createAddProduct(
   2000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/amarula_hekbqg.jpg",
   "licores",
-  8
+  8,
+  "20% OFF!"
 );
 createAddProduct(
   "Jagermeifter",
@@ -95,7 +113,8 @@ createAddProduct(
   5000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/jagermeister-350-ml-licoreria-paradiso-937x1000_ozbfbp.jpg",
   "licores",
-  9
+  9,
+  "20% OFF!"
 );
 createAddProduct(
   "Bombay Sapphire",
@@ -103,7 +122,8 @@ createAddProduct(
   3000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126871/drinksCo/bombaybotella_wd1acj.webp",
   "gin",
-  10
+  10,
+  "20% OFF!"
 );
 createAddProduct(
   "Tanqueray",
@@ -111,7 +131,8 @@ createAddProduct(
   20000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126873/drinksCo/gin-tanqueray_wldk9s.jpg",
   "gin",
-  11
+  11,
+  "20% OFF!"
 );
 createAddProduct(
   "Beefeater",
@@ -119,7 +140,8 @@ createAddProduct(
   4000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126873/drinksCo/gin-beefeater-700cc_kkvm6o.jpg",
   "gin",
-  12
+  12,
+  "20% OFF!"
 );
 createAddProduct(
   "Hesperidina",
@@ -127,7 +149,8 @@ createAddProduct(
   2000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/hesperidina_fia72f.jpg",
   "aperitivos",
-  13
+  13,
+  "20% OFF!"
 );
 createAddProduct(
   "Fernet Branca",
@@ -135,7 +158,8 @@ createAddProduct(
   2000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126873/drinksCo/fernet-branca_b8dl3u.jpg",
   "aperitivos",
-  14
+  14,
+  "20% OFF!"
 );
 createAddProduct(
   "Cynar",
@@ -143,7 +167,8 @@ createAddProduct(
   1000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126873/drinksCo/cynar_vnil9o.webp",
   "aperitivos",
-  15
+  15,
+  "20% OFF!"
 );
 createAddProduct(
   "Campari",
@@ -151,7 +176,8 @@ createAddProduct(
   1000,
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/campari_qitapq.jpg",
   "aperitivos",
-  16
+  16,
+  "20% OFF!"
 );
 
 export const TotalProducts = stockProducts.length;

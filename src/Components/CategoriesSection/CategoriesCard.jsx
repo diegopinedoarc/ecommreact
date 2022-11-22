@@ -11,7 +11,7 @@ export const CategoriesCard = ({ title, img, category }) => {
   const selectedCategory = useSelector(
     (state) => state.categories.selectedCategory
   );
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
   return (
     <CateCardContainer
       selected={category === selectedCategory}

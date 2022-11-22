@@ -5,10 +5,37 @@ export const HeroWrapper = styled.div`
   height: 20rem;
   display: flex;
   border: solid 1px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+`;
+export const HeroTitle = styled.h2``;
+export const SearchContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 `;
 
-export const SearchContainer = styled.div``;
+export const SearchInput = styled.input`
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 2.3rem;
+  color: black;
+`;
 
-export const SearchInput = styled.input``;
+export const SearchButton = styled.button`
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 2.3rem;
+  color: black;
+`;
 
-export const SearchButton = styled.button``;
+export const HeroFormStyled = styled.form`
+  display: flex;
+  gap: 20px;
+  position: relative;
+`;
