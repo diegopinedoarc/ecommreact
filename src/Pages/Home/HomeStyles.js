@@ -10,7 +10,6 @@ export const HomeWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  border: solid 1px white;
   margin-top: 1rem;
 
   h2 {

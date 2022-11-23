@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  HeroFlexBox,
   HeroFormStyled,
   HeroTitle,
   HeroWrapper,
@@ -33,7 +34,10 @@ const Hero = ({ doScroll }) => {
   };
   return (
     <HeroWrapper>
-      <HeroTitle>¿Que cateogria buscas?</HeroTitle>
+      <HeroFlexBox>
+        <HeroTitle>¿Que estas buscando hoy?</HeroTitle>
+        <HeroTitle>Whiskeys - Aperitivos - Gin - Licores</HeroTitle>
+      </HeroFlexBox>
       <HeroFormStyled>
         <SearchContainer>
           <SearchInput
