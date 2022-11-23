@@ -15,7 +15,7 @@ const ProductsSection = () => {
   const selectedCategory = useSelector(
     (state) => state.categories.selectedCategory
   );
-  const TotalProducts = useSelector((state) => state.products.TotalProducts);
+  const TotalProducts = useSelector((state) => state.products.totalProducts);
   if (selectedCategory) {
     products = { [selectedCategory]: products[selectedCategory] };
   }

@@ -17,7 +17,7 @@ export const ButtonContainerStyled = styled.div`
   width: 100%;
 `;
 
-export const ButtonPag = styled.div`
+export const ButtonPag = styled.button`
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -30,6 +30,10 @@ export const ButtonPag = styled.div`
   outline: none;
   background: white;
   color: black;
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 `;
 
 export const SectionTitle = styled.h2`
