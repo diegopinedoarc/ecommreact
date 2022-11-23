@@ -8,8 +8,9 @@ export const CardContainer = styled.div`
   width: 16rem;
   height: 12rem;
   gap: 0rem;
-  border: solid 1px white;
   padding: 0.4rem;
+  background-color: var(--azultransp);
+  border-radius: 0.5rem;
 `;
 
 export const InfoCardContainer = styled.div`

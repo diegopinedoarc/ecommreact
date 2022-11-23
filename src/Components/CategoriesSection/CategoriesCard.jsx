@@ -17,8 +17,8 @@ export const CategoriesCard = ({ title, img, category }) => {
       selected={category === selectedCategory}
       onClick={() => dispatch(categoriesActions.selectCategory(category))}
     >
-      <CateCardImg src={img} alt={category} />
       <CateCardTitle> {title} </CateCardTitle>
+      <CateCardImg src={img} alt={category} />
     </CateCardContainer>
   );
 };

@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const OfertaCardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  border-radius: 0.4rem;
   width: 20rem;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   background-color: var(--azultransp);
+  border-radius: 0.5rem;
 `;
 export const OfertaCardImg = styled.img`
   width: 4rem;

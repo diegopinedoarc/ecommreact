@@ -6,11 +6,14 @@ import CardOfertas from "./CardOfertas";
 const Ofertas = () => {
   const ofertas = useSelector((state) => state.ofertas.ofertas);
   return (
-    <OfertasContainer>
-      {ofertas.map((oferta) => (
-        <CardOfertas key={oferta.id} {...oferta} />
-      ))}
-    </OfertasContainer>
+    <>
+      <h2>Ofertas del dia</h2>
+      <OfertasContainer>
+        {ofertas.map((oferta) => (
+          <CardOfertas key={oferta.id} {...oferta} />
+        ))}
+      </OfertasContainer>
+    </>
   );
 };
 

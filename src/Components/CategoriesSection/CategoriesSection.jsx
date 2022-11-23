@@ -5,11 +5,14 @@ import CategoriesCard from "./CategoriesCard";
 const CategoriesSection = () => {
   const categories = useSelector((state) => state.categories.categories);
   return (
-    <CateSection>
-      {categories.map((category) => (
-        <CategoriesCard key={category.id} {...category} />
-      ))}
-    </CateSection>
+    <>
+      <h2>Categorias</h2>
+      <CateSection>
+        {categories.map((category) => (
+          <CategoriesCard key={category.id} {...category} />
+        ))}
+      </CateSection>
+    </>
   );
 };
 
