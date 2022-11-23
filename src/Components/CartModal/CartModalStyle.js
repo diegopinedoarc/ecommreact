@@ -14,15 +14,18 @@ export const ContainerStyled = styled(motion.div)`
   width: 450px;
   height: calc(100vh - 4rem);
   padding: 2rem;
-  background-color: var(--gray-bg);
   border-radius: 0 0 0 1rem;
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
-  background-color: white;
+  background-color: var(--fondocarta);
   color: black;
 `;
 
 export const CloseButtonContainerStyled = styled.div`
   height: 32px;
+  & :hover {
+    background-color: rgba(0, 0, 110, 0.6);
+    color: white;
+  }
 `;
 
 export const CloseButtonStyled = styled(motion.button)`
@@ -36,6 +39,10 @@ export const CloseButtonStyled = styled(motion.button)`
   border-radius: 10px;
   color: black;
   cursor: pointer;
+  /* & :hover {
+    background-color: rgba(0, 0, 110, 0.6);
+    color: white;
+  } */
 `;
 
 export const TitleStyled = styled.div`

@@ -20,4 +20,10 @@ export const OfertaCardTitle = styled.h3`
 `;
 export const OfertaCardPrice = styled.h2``;
 
-export const OfertaCardButton = styled.button``;
+export const OfertaCardButton = styled.button`
+  width: 8rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+`;

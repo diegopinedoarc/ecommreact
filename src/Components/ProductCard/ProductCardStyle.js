@@ -8,9 +8,10 @@ export const CardContainer = styled.div`
   width: 16rem;
   height: 12rem;
   gap: 0rem;
-  padding: 0.4rem;
-  background-color: var(--azultransp);
+  padding: 1rem;
+  background-color: var(--blancotransp);
   border-radius: 0.5rem;
+  color: white;
 `;
 
 export const InfoCardContainer = styled.div`
@@ -39,6 +40,11 @@ export const ProductPrice = styled.p`
 
 export const AddCartButton = styled.button`
   margin-top: 0.5rem;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
 `;
 
 export const SmallCardContainer = styled.div`
