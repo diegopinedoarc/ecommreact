@@ -6,5 +6,4 @@ export const OfertasContainer = styled.div`
   width: 80%;
   gap: 2rem;
   justify-content: center;
-  border: solid 1px white;
 `;

@@ -4,7 +4,7 @@ export const HeroWrapper = styled.div`
   width: 80%;
   height: 20rem;
   display: flex;
-  border: solid 1px white;
+
   display: flex;
   flex-direction: column;
   align-items: center;

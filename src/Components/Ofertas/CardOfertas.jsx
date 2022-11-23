@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  OfertaCardButton,
   OfertaCardContainer,
   OfertaCardImg,
   OfertaCardPrice,
@@ -14,6 +15,7 @@ const CardOfertas = ({ img, name, price, info }) => {
       <OfertaCardImg src={img} alt={name} />
       <OfertaCardPrice>{formatPrice(price)}</OfertaCardPrice>
       <OfertaCardTitle> {name} </OfertaCardTitle>
+      <OfertaCardButton>Comprar</OfertaCardButton>
     </OfertaCardContainer>
   );
 };
