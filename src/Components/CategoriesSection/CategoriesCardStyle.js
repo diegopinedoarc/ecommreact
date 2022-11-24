@@ -10,7 +10,7 @@ export const CateCardContainer = styled.div`
   cursor: pointer;
   padding: 1rem;
   background-color: ${({ selected }) =>
-    selected ? "var(--blancotransp)" : "var(--azultransp)"};
+    selected ? "var(--azultransp)" : "var(--blancotransp)"};
   border-radius: 0.5rem;
 `;
 

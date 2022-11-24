@@ -7,7 +7,7 @@ export const OfertaCardContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: var(--azultransp);
+  background-color: var(--blancotransp);
   border-radius: 0.5rem;
 `;
 export const OfertaCardImg = styled.img`

@@ -16,3 +16,10 @@ export const HomeWrapper = styled.div`
     font-weight: 400;
   }
 `;
+export const ProdContainerRef = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90vw;
+`;
