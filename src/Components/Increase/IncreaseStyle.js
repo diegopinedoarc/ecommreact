@@ -11,7 +11,7 @@ export const IncreaseStyled = styled(motion.button)`
   border-radius: 15px;
   font-size: 1.1rem;
   font-weight: 800;
-  color: white;
+  color: black;
   cursor: pointer;
 
   &:disabled {

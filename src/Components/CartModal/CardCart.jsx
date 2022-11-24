@@ -26,8 +26,7 @@ const CardCart = ({ img, name, price, quantity, id }) => {
         <PriceStyled>{formatPrice(price)}</PriceStyled>
       </TextContainerStyled>
       <QuantityContainerStyled>
-        <Increase>
-          onClick={() => dispatch(cartActions.removeFromCart(id))}
+        <Increase onClick={() => dispatch(cartActions.removeFromCart(id))}>
           {quantity === 1 ? <TbShoppingCartX /> : <AiFillMinusCircle />}
         </Increase>
         <Count>{quantity}</Count>
