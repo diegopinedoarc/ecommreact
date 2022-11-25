@@ -24,7 +24,11 @@ const ProductsSection = () => {
 
   return (
     <>
-      <SectionTitle>Catálogo</SectionTitle>
+      <SectionTitle
+        style={{ fontFamily: "var(--fontgrande)", fontSize: "1.5rem" }}
+      >
+        Catálogo
+      </SectionTitle>
       <ProductsContainer>
         {Object.entries(products).map(([, items]) =>
           items.map((item) => {

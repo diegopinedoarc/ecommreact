@@ -1,9 +1,9 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const HeroWrapper = styled.div`
-  width: 80%;
-  height: 10rem;
-  height: 20rem;
+  width: 100%;
+  height: 8rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -12,6 +12,18 @@ export const HeroWrapper = styled.div`
     center center;
   background-size: cover;
   border-radius: 0.8rem;
+  @media only screen and (max-width: 624px) {
+    width: 90%;
+    flex-direction: column;
+    gap: 0.2rem;
+    height: 9rem;
+    align-items: center;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 1000px) and (min-width: 624px) {
+    width: 90%;
+    padding: 0.3rem;
+  }
 `;
 export const HeroFlexBox = styled.div`
   display: flex;
@@ -19,12 +31,15 @@ export const HeroFlexBox = styled.div`
   justify-content: center;
   flex-direction: column;
 `;
-export const HeroTitle = styled.h2``;
+export const HeroTitle = styled.h2`
+  @media only screen and (max-width: 1000px) and (min-width: 624px) {
+    text-align: center;
+  }
+`;
 export const SearchContainer = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 0.4rem;
 `;
 
 export const SearchInput = styled.input`
@@ -34,17 +49,21 @@ export const SearchInput = styled.input`
   padding: 0.5rem 2.3rem;
   color: black;
   width: 16rem;
-  height: 2.5rem;
+  height: 1.5rem;
   text-align: center;
+  @media only screen and (max-width: 624px) {
+    width: 10rem;
+  }
 `;
 
-export const SearchButton = styled.button`
+export const SearchButton = styled(motion.button)`
+  border-radius: 0.8rem;
   outline: none;
   border: none;
-  border-radius: 0.4rem;
-  padding: 0.5rem 2.3rem;
-  color: black;
-  width: 18rem;
+  background-color: rgb(214, 40, 40);
+  color: rgb(234, 226, 183);
+  font-weight: bold;
+  width: 3rem;
   height: 2.5rem;
 `;
 

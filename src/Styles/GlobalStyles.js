@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     --fondocarta: rgba(250,250,250,0.9);
     --fontroboto:  'Roboto', sans-serif;
     --fontlato: 'Lato', sans-serif;
+    --fontgrande: 'Permanent Marker', cursive;
 }
 body {
     background-color: #000000;

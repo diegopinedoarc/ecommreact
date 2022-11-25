@@ -74,6 +74,15 @@ const CartModal = () => {
                 ) : (
                   <p>No hay productos en el carro</p>
                 )}
+                <Submit
+                  onClick={() => {
+                    navigate("/checkout");
+                    dispatch(cartActions.toggleHiddenCart());
+                  }}
+                  disabled={!cartItems.length}
+                >
+                  Iniciar compra
+                </Submit>
               </ProductsWrapperStyled>
             </MainContainerStyled>
             <PriceContainerStyled>
@@ -91,17 +100,7 @@ const CartModal = () => {
                   {formatPrice(totalPrice + shippingCost)}
                 </PriceStyled>
               </TotalStyled>
-              <ButtonContainerStyled>
-                <Submit
-                  onClick={() => {
-                    navigate("/checkout");
-                    dispatch(cartActions.toggleHiddenCart());
-                  }}
-                  disabled={!cartItems.length}
-                >
-                  Iniciar compra
-                </Submit>
-              </ButtonContainerStyled>
+              <ButtonContainerStyled></ButtonContainerStyled>
             </PriceContainerStyled>
           </ContainerStyled>
         )}

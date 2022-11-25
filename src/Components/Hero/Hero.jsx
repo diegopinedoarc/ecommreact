@@ -10,6 +10,7 @@ import {
   SearchInput,
 } from "./HeroStyles";
 import * as categoriesActions from "../../redux/categories/categories-actions";
+import { GoSearch } from "react-icons/go";
 
 const Hero = ({ doScroll }) => {
   const [value, setValue] = useState("");
@@ -35,13 +36,16 @@ const Hero = ({ doScroll }) => {
   return (
     <HeroWrapper>
       <HeroFlexBox>
-        <HeroTitle>¿Que estas buscando hoy?</HeroTitle>
-        <HeroTitle>Whiskeys - Aperitivos - Gin - Licores</HeroTitle>
+        <HeroTitle
+          style={{ fontFamily: "var(--fontgrande)", fontSize: "2rem" }}
+        >
+          ¿Que estas buscando hoy?
+        </HeroTitle>
       </HeroFlexBox>
       <HeroFormStyled>
         <SearchContainer>
           <SearchInput
-            placeholder="Filtra por categoria"
+            placeholder="Ej: Whiskeys, Aperitivos, Licores, Gin"
             value={value}
             onChange={(e) => setValue(e.target.value)}
             type="text"
@@ -49,8 +53,9 @@ const Hero = ({ doScroll }) => {
           <SearchButton
             onClick={(e) => handlerSubmit(e, value)}
             disabled={!value}
+            whileTap={{ scale: 0.92 }}
           >
-            Buscar
+            <GoSearch />
           </SearchButton>
         </SearchContainer>
       </HeroFormStyled>

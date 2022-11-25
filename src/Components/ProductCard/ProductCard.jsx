@@ -29,6 +29,7 @@ const ProductCard = ({ img, id, price, category, name }) => {
         onClick={() =>
           dispatch(cartActions.addToCart({ img, name, id, price }))
         }
+        whileTap={{ scale: 0.95 }}
       >
         Agregar
       </AddCartButton>

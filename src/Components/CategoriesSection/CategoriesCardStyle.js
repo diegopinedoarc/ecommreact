@@ -10,8 +10,9 @@ export const CateCardContainer = styled.div`
   cursor: pointer;
   padding: 1rem;
   background-color: ${({ selected }) =>
-    selected ? "var(--azultransp)" : "var(--blancotransp)"};
+    selected ? "rgb(234, 226, 183)" : "var(--blancotransp)"};
   border-radius: 0.5rem;
+  color: ${({ selected }) => (selected ? "rgb(0, 48, 73)" : "white")};
 `;
 
 export const CateCardImg = styled.img`

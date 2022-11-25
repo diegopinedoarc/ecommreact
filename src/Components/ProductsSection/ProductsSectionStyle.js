@@ -7,6 +7,9 @@ export const ProductsContainer = styled.div`
   width: 80%;
   align-items: center;
   gap: 1rem;
+  @media only screen and (max-width: 624px) {
+    flex-direction: column;
+  }
 `;
 export const ButtonContainerStyled = styled.div`
   display: flex;
