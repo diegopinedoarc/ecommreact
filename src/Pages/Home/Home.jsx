@@ -5,6 +5,7 @@ import Ofertas from "../../Components/Ofertas/Ofertas";
 import ProductsSection from "../../Components/ProductsSection/ProductsSection";
 import { HomeWrapper, ProdContainerRef } from "./HomeStyles";
 import { useRef } from "react";
+
 const Home = () => {
   const productsRef = useRef();
   const doScroll = () => {
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <HomeWrapper>
       <Hero doScroll={doScroll} />
+
       <Ofertas />
       <CategoriesSection />
       <ProdContainerRef ref={productsRef}>

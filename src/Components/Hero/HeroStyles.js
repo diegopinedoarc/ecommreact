@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 export const HeroWrapper = styled.div`
   width: 100%;
-  height: 8rem;
+  height: 14rem;
   display: flex;
-  justify-content: space-around;
+  padding: 0.5rem;
   align-items: center;
-  gap: 4rem;
+  justify-content: center;
   background: url(https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/backgbarrica_nrvrqq.jpg)
     center center;
   background-size: cover;
@@ -34,6 +34,10 @@ export const HeroFlexBox = styled.div`
 export const HeroTitle = styled.h2`
   @media only screen and (max-width: 1000px) and (min-width: 624px) {
     text-align: center;
+    font-size: 1.4rem;
+  }
+  @media only screen and (max-width: 624px) {
+    font-size: 1.4rem;
   }
 `;
 export const SearchContainer = styled.div`
@@ -51,6 +55,7 @@ export const SearchInput = styled.input`
   width: 16rem;
   height: 1.5rem;
   text-align: center;
+
   @media only screen and (max-width: 624px) {
     width: 10rem;
   }
@@ -65,6 +70,7 @@ export const SearchButton = styled(motion.button)`
   font-weight: bold;
   width: 3rem;
   height: 2.5rem;
+  cursor: pointer;
 `;
 
 export const HeroFormStyled = styled.form`

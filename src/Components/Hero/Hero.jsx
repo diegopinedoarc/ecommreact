@@ -11,6 +11,7 @@ import {
 } from "./HeroStyles";
 import * as categoriesActions from "../../redux/categories/categories-actions";
 import { GoSearch } from "react-icons/go";
+import Slider from "../Slider/Slider";
 
 const Hero = ({ doScroll }) => {
   const [value, setValue] = useState("");
@@ -35,30 +36,29 @@ const Hero = ({ doScroll }) => {
   };
   return (
     <HeroWrapper>
+      <Slider />
       <HeroFlexBox>
-        <HeroTitle
-          style={{ fontFamily: "var(--fontgrande)", fontSize: "2rem" }}
-        >
+        <HeroTitle style={{ fontFamily: "var(--fontgrande)" }}>
           ¿Que estas buscando hoy?
         </HeroTitle>
+        <HeroFormStyled>
+          <SearchContainer>
+            <SearchInput
+              placeholder="Ej: Whiskeys, Aperitivos, Licores, Gin"
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+              type="text"
+            />
+            <SearchButton
+              onClick={(e) => handlerSubmit(e, value)}
+              disabled={!value}
+              whileTap={{ scale: 0.92 }}
+            >
+              <GoSearch />
+            </SearchButton>
+          </SearchContainer>
+        </HeroFormStyled>
       </HeroFlexBox>
-      <HeroFormStyled>
-        <SearchContainer>
-          <SearchInput
-            placeholder="Ej: Whiskeys, Aperitivos, Licores, Gin"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            type="text"
-          />
-          <SearchButton
-            onClick={(e) => handlerSubmit(e, value)}
-            disabled={!value}
-            whileTap={{ scale: 0.92 }}
-          >
-            <GoSearch />
-          </SearchButton>
-        </SearchContainer>
-      </HeroFormStyled>
     </HeroWrapper>
   );
 };
