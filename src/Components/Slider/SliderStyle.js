@@ -13,9 +13,9 @@ export const SliderContainer = styled.div`
 export const ImgSlider = styled.img`
   display: block;
   overflow: hidden;
-  height: 200px;
-  max-width: 80%;
-  width: 80%;
+  height: 220px;
+  max-width: 90%;
+  width: 70%;
   border-radius: 0.8rem;
   box-shadow: 2px 2px 2px 1px var(--naranja);
   &:hover {

@@ -8,9 +8,9 @@ export const HeroWrapper = styled.div`
   padding: 0.5rem;
   align-items: center;
   justify-content: center;
-  background: url(https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/backgbarrica_nrvrqq.jpg)
+  /* background: url(https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/backgbarrica_nrvrqq.jpg)
     center center;
-  background-size: cover;
+  background-size: cover; */
   border-radius: 0.8rem;
   @media only screen and (max-width: 624px) {
     width: 90%;
