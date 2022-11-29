@@ -13,6 +13,10 @@ export const CardContainer = styled.div`
   background-color: var(--blancotransp);
   border-radius: 0.5rem;
   color: white;
+  &:hover {
+    /* background-color: black; */
+    box-shadow: 2px 4px 8px 2px var(--naranja);
+  }
 `;
 
 export const InfoCardContainer = styled.div`
@@ -49,6 +53,10 @@ export const AddCartButton = styled(motion.button)`
   background-color: rgb(214, 40, 40);
   color: rgb(234, 226, 183);
   font-weight: bold;
+  &:hover {
+    /* background-color: black; */
+    box-shadow: 2px 4px 8px 2px var(--azul);
+  }
 `;
 
 export const SmallCardContainer = styled.div`
@@ -62,5 +70,5 @@ export const CardImg = styled.img`
   width: 4rem;
   height: 4rem;
   border-radius: 0.2rem;
-  filter: drop-shadow(4px 4px 8px #faea10);
+  box-shadow: 2px 4px 8px 2px var(--naranja);
 `;

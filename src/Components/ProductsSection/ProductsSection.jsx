@@ -25,9 +25,17 @@ const ProductsSection = () => {
   return (
     <>
       <SectionTitle
-        style={{ fontFamily: "var(--fontgrande)", fontSize: "1.5rem" }}
+        style={{
+          fontFamily: "var(--fontgrande)",
+          fontSize: "1.5rem",
+          width: "90%",
+          border: "solid 1px white",
+          display: "flex",
+          justifyContent: "center",
+          borderRadius: "0.4rem",
+        }}
       >
-        Catálogo
+        Nuestros productos
       </SectionTitle>
       <ProductsContainer>
         {Object.entries(products).map(([, items]) =>

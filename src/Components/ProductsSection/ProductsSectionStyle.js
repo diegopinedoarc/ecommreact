@@ -30,12 +30,17 @@ export const ButtonPag = styled.button`
   font-size: 3rem;
   text-align: center;
   cursor: pointer;
-  outline: none;
-  background: white;
-  color: black;
+
+  background: var(--rojo);
+  color: var(--blanco);
+  border: none;
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+  &:hover {
+    /* background-color: black; */
+    box-shadow: 2px 4px 8px 2px var(--azul);
   }
 `;
 

@@ -7,9 +7,9 @@ const Ofertas = () => {
   const ofertas = useSelector((state) => state.ofertas.ofertas);
   return (
     <>
-      <h2 style={{ fontFamily: "var(--fontgrande)", fontSize: "3rem" }}>
+      {/* <h2 style={{ fontFamily: "var(--fontgrande)", fontSize: "3rem" }}>
         Ofertas del dia
-      </h2>
+      </h2> */}
       <OfertasContainer>
         {ofertas.map((oferta) => (
           <CardOfertas key={oferta.id} {...oferta} />

@@ -5,14 +5,26 @@ export const SliderContainer = styled.div`
   flex-grow: 1;
   align-items: center;
   gap: 1rem;
+  @media only screen and (max-width: 624px) {
+    width: 20rem;
+    max-width: 100vw;
+  }
 `;
 export const ImgSlider = styled.img`
   display: block;
   overflow: hidden;
   height: 200px;
-  max-width: 50%;
-  width: 100%;
+  max-width: 80%;
+  width: 80%;
   border-radius: 0.8rem;
+  box-shadow: 2px 2px 2px 1px var(--naranja);
+  &:hover {
+    /* background-color: black; */
+    box-shadow: 2px 2px 2px 1px var(--azul);
+  }
+  @media only screen and (max-width: 624px) {
+    width: 100%;
+  }
 `;
 export const ButtonSliderPlus = styled.button`
   width: 2rem;
@@ -25,9 +37,14 @@ export const ButtonSliderPlus = styled.button`
   cursor: pointer;
   color: var(--blanco);
   background-color: var(--rojo);
+  box-shadow: 2px 2px 2px 1px var(--naranja);
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+  &:hover {
+    /* background-color: black; */
+    box-shadow: 2px 2px 2px 1px var(--azul);
   }
 `;
 export const ButtonSliderLess = styled.button`
@@ -41,8 +58,13 @@ export const ButtonSliderLess = styled.button`
   cursor: pointer;
   color: var(--blanco);
   background-color: var(--rojo);
+  box-shadow: 2px 2px 2px 1px var(--naranja);
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+  &:hover {
+    /* background-color: black; */
+    box-shadow: 2px 2px 2px 1px var(--azul);
   }
 `;

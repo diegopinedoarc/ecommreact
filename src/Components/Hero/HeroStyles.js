@@ -16,13 +16,15 @@ export const HeroWrapper = styled.div`
     width: 90%;
     flex-direction: column;
     gap: 0.2rem;
-    height: 9rem;
+    height: 20rem;
     align-items: center;
     justify-content: center;
   }
   @media only screen and (max-width: 1000px) and (min-width: 624px) {
     width: 90%;
     padding: 0.3rem;
+    flex-direction: column;
+    height: 20rem;
   }
 `;
 export const HeroFlexBox = styled.div`
@@ -55,6 +57,11 @@ export const SearchInput = styled.input`
   width: 16rem;
   height: 1.5rem;
   text-align: center;
+  &:hover {
+    /* background-color: black; */
+    box-shadow: 2px 4px 8px 2px var(--azul);
+    background-color: var(--naranja);
+  }
 
   @media only screen and (max-width: 624px) {
     width: 10rem;
@@ -71,6 +78,7 @@ export const SearchButton = styled(motion.button)`
   width: 3rem;
   height: 2.5rem;
   cursor: pointer;
+  box-shadow: 2px 2px 2px 1px var(--naranja);
 `;
 
 export const HeroFormStyled = styled.form`

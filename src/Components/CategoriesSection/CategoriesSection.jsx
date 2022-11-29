@@ -6,9 +6,9 @@ const CategoriesSection = () => {
   const categories = useSelector((state) => state.categories.categories);
   return (
     <>
-      <h2 style={{ fontFamily: "var(--fontgrande)", fontSize: "1.5rem" }}>
+      {/* <h2 style={{ fontFamily: "var(--fontgrande)", fontSize: "1.5rem" }}>
         Categorias
-      </h2>
+      </h2> */}
       <CateSection>
         {categories.map((category) => (
           <CategoriesCard key={category.id} {...category} />

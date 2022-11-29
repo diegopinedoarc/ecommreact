@@ -17,13 +17,13 @@ const Navbar = ({ open }) => {
         </Link>
       </motion.div>
       <motion.div whileTap={{ scale: 0.92 }}>
+        <Link to="contacto">Contacto</Link>
+      </motion.div>
+      <motion.div whileTap={{ scale: 0.92 }}>
         <Link to="login">
           <BiLogIn />
           <FiUser />
         </Link>
-      </motion.div>
-      <motion.div whileTap={{ scale: 0.92 }}>
-        <Link to="contacto">Contacto</Link>
       </motion.div>
       <motion.div whileTap={{ scale: 0.92 }}>
         <Link to="#">

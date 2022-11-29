@@ -14,10 +14,13 @@ export const ContainerStyled = styled(motion.div)`
   width: 450px;
   height: calc(100vh - 4rem);
   padding: 2rem;
-  border-radius: 0 0 0 1rem;
+  border-radius: 1rem 0 0rem 1rem;
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
-  background-color: var(--fondocarta);
+  background-color: var(--amarillo);
   color: black;
+  @media only screen and (max-width: 624px) {
+    width: 380px;
+  }
 `;
 
 export const CloseButtonContainerStyled = styled.div`
