@@ -9,7 +9,7 @@ export const CateCardContainer = styled.div`
   height: 5rem;
   cursor: pointer;
   padding: 1rem;
-  box-shadow: 2px 4px 8px 2px var(--azul);
+  box-shadow: 2px 4px 8px 2px var(--blanco);
   background-color: ${({ selected }) =>
     selected ? "var(--naranjatransp)" : "none"};
   border-radius: 1rem 1rem 0rem 1rem;
@@ -28,7 +28,7 @@ export const CateCardImg = styled.img`
   border-radius: 0.8rem;
   position: relative;
   top: -1.5rem;
-  box-shadow: 2px 4px 8px 2px var(--azul);
+  box-shadow: 2px 4px 8px 2px var(--blanco);
 `;
 export const CateCardTitle = styled.h2`
   font-size: 1rem;
