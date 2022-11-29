@@ -24,19 +24,19 @@ const ProductsSection = () => {
 
   return (
     <>
-      <SectionTitle
+      {/* <SectionTitle
         style={{
           fontFamily: "var(--fontgrande)",
           fontSize: "1.5rem",
           width: "90%",
-          border: "solid 1px white",
+
           display: "flex",
           justifyContent: "center",
           borderRadius: "0.4rem",
         }}
       >
         Nuestros productos
-      </SectionTitle>
+      </SectionTitle> */}
       <ProductsContainer>
         {Object.entries(products).map(([, items]) =>
           items.map((item) => {

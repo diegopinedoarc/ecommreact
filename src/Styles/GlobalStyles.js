@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     --fontgrande: 'Permanent Marker', cursive;
 }
 body {
-    background-color: #000000;
+    background:url(https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/cardbacknegro_xg0oac.jpg);
     color: wheat;
     font-family: var(--fontroboto);
  

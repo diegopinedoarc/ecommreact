@@ -11,7 +11,7 @@ export const CardContainer = styled.div`
   gap: 0rem;
   padding: 1rem;
   background-color: var(--blancotransp);
-  border-radius: 0.5rem;
+  border-radius: 1rem 1rem 0rem 1rem;
   color: white;
   &:hover {
     /* background-color: black; */

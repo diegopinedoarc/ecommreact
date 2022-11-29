@@ -9,9 +9,10 @@ export const CateCardContainer = styled.div`
   height: 5rem;
   cursor: pointer;
   padding: 1rem;
+  box-shadow: 2px 4px 8px 2px var(--azul);
   background-color: ${({ selected }) =>
     selected ? "var(--naranjatransp)" : "none"};
-  border-radius: 0.5rem;
+  border-radius: 1rem 1rem 0rem 1rem;
   color: ${({ selected }) => (selected ? "rgb(0, 48, 73)" : "black")};
   &:hover {
     /* background-color: black; */
@@ -27,6 +28,7 @@ export const CateCardImg = styled.img`
   border-radius: 0.8rem;
   position: relative;
   top: -1.5rem;
+  box-shadow: 2px 4px 8px 2px var(--azul);
 `;
 export const CateCardTitle = styled.h2`
   font-size: 1rem;

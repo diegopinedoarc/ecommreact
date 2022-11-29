@@ -11,9 +11,10 @@ export const HomeWrapper = styled.div`
   flex-direction: column;
   gap: 2rem;
   margin-top: 1rem;
-  background: #0f2027;
+  /* background: #0f2027;
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+
   border-radius: 0.4rem;
 
   h2 {

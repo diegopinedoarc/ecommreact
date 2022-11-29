@@ -10,7 +10,7 @@ export const OfertaCardContainer = styled.div`
 
   padding: 1rem;
   background-color: var(--blancotransp);
-  border-radius: 0.5rem;
+  border-radius: 1rem 1rem 0rem 1rem;
   &:hover {
     /* background-color: black; */
     box-shadow: 2px 4px 8px 2px var(--naranja);
