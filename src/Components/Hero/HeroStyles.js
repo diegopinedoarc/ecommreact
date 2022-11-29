@@ -57,10 +57,10 @@ export const SearchInput = styled.input`
   width: 16rem;
   height: 1.5rem;
   text-align: center;
+  box-shadow: 2px 4px 8px 2px var(--amarillo);
   &:hover {
     /* background-color: black; */
     box-shadow: 2px 4px 8px 2px var(--azul);
-    background-color: var(--naranja);
   }
 
   @media only screen and (max-width: 624px) {
