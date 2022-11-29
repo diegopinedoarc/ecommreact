@@ -21,9 +21,9 @@ export const ButtonContainerStyled = styled.div`
 `;
 
 export const ButtonPag = styled.button`
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.4rem 0.4rem 0 0.4rem;
   display: flex;
   align-items: center;
   justify-content: center;

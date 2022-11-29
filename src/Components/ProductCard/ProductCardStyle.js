@@ -53,6 +53,7 @@ export const AddCartButton = styled(motion.button)`
   background-color: rgb(214, 40, 40);
   color: rgb(234, 226, 183);
   font-weight: bold;
+  cursor: pointer;
   &:hover {
     /* background-color: black; */
     box-shadow: 2px 4px 8px 2px var(--azul);
