@@ -11,7 +11,8 @@ export const ButtonSubmitStyled = styled(motion.button)`
   font-weight: 400;
   cursor: pointer;
   margin-top: 15px;
-  background-color: var(--azultransp);
+  background-color: var(--blanco);
+  box-shadow: 2px 4px 8px 2px var(--blanco);
 
   &:disabled {
     cursor: not-allowed;

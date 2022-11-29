@@ -16,8 +16,9 @@ export const ContainerStyled = styled(motion.div)`
   padding: 2rem;
   border-radius: 1rem 0 0rem 1rem;
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
-  background-color: var(--amarillo);
-  color: black;
+  /* background-color: var(--amarillo); */
+  background: url(https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/cardbacknegro_xg0oac.jpg);
+  color: var(--blanco);
   @media only screen and (max-width: 624px) {
     width: 380px;
   }
@@ -68,7 +69,7 @@ export const ProductsWrapperStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 1rem;
   width: 100%;
   height: 400px;
   margin: 0 auto;
