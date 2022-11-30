@@ -21,17 +21,17 @@ export const ButtonContainerStyled = styled.div`
 `;
 
 export const ButtonPag = styled.button`
-  width: 4rem;
+  width: 2rem;
   height: 2rem;
-  border-radius: 0.4rem 0.4rem 0 0.4rem;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 1rem;
   text-align: center;
   cursor: pointer;
 
-  background: var(--rojo);
+  background: var(--azul);
   color: var(--blanco);
   border: none;
   &:disabled {
@@ -40,7 +40,7 @@ export const ButtonPag = styled.button`
   }
   &:hover {
     /* background-color: black; */
-    box-shadow: 2px 4px 8px 2px var(--azul);
+    box-shadow: 2px 4px 8px 2px var(--amarillo);
   }
 `;
 
