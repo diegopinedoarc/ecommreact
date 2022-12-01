@@ -5,7 +5,6 @@ import {
   ButtonContainerStyled,
   ButtonPag,
   ProductsContainer,
-  SectionTitle,
 } from "./ProductsSectionStyle";
 import { INITIAL_LIMIT } from "../../utils/constants";
 

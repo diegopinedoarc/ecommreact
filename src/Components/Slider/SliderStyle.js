@@ -18,6 +18,7 @@ export const ImgSlider = styled.img`
   width: 70%;
   border-radius: 0.8rem;
   box-shadow: 2px 2px 2px 1px var(--naranja);
+  opacity: 70%;
   &:hover {
     /* background-color: black; */
     box-shadow: 2px 2px 2px 1px var(--azul);

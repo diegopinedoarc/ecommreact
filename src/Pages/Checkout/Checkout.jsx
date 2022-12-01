@@ -14,7 +14,11 @@ const Checkout = () => {
   return (
     <>
       <CheckoutWrapper>
-        <CheckoutForm></CheckoutForm>
+        <CheckoutForm
+          cartItems={cartItems}
+          shippingCost={shippingCost}
+          price={price}
+        ></CheckoutForm>
         <CheckoutProducts
           cartItems={cartItems}
           shippingCost={shippingCost}

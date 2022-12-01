@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Form as FormikForm } from "formik";
 
 export const LoginContainerStyled = styled.div`
@@ -9,6 +10,7 @@ export const LoginContainerStyled = styled.div`
   gap: 20px;
   margin-top: 20px;
 `;
+
 export const Form = styled(FormikForm)`
   display: flex;
   flex-direction: column;
@@ -17,13 +19,7 @@ export const Form = styled(FormikForm)`
   padding: 0 2rem;
   gap: 20px;
 `;
-export const LoginPasswordStyled = styled.p`
-  margin: 0;
-  :hover {
-    text-decoration: underline;
-    transition: all 0.25s ease-out;
-  }
-`;
+
 export const LoginButtonGoogleStyled = styled.button`
   display: flex;
   justify-content: center;
@@ -32,14 +28,17 @@ export const LoginButtonGoogleStyled = styled.button`
   padding: 1rem 1.5rem;
   outline: none;
   border: 2px solid white;
+  background: none;
   border-radius: 1rem;
   color: white;
   cursor: pointer;
-  background: none;
 `;
-export const LoginEmailStyled = styled.p`
-  :hover {
-    text-decoration: underline;
-    transition: all 0.25s ease-out;
+
+export const LoginEmailStyled = styled(Link)`
+  & p {
+    :hover {
+      text-decoration: underline;
+      transition: all 0.25s ease-out;
+    }
   }
 `;

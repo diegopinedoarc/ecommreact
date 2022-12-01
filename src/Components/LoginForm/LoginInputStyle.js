@@ -14,6 +14,7 @@ export const LoginInputStyled = styled.input`
   border: ${({ isError }) => (isError ? "1px solid #fb103d " : "none")};
   outline: none;
   caret-color: white;
+  border: 2px solid white;
 
   ::placeholder {
     opacity: 80%;

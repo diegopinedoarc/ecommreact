@@ -8,6 +8,7 @@ export const LogoImg = styled(motion.img)`
   margin-left: 3rem;
   border-radius: 0.4rem;
   box-shadow: 2px 4px 8px 2px var(--blanco);
+  opacity: 50%;
 `;
 const Logo = () => {
   return <LogoImg src={logo3} alt="" whileTap={{ scale: 0.95 }} />;
