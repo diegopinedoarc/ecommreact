@@ -42,7 +42,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/jackdanielsbotella_h63ank.jpg",
   "whiskeys",
   1,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Jack Daniels Honey",
@@ -51,7 +51,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/jackdanielshonybotella_y6w6tl.png",
   "whiskeys",
   2,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Johnny Walker Black Label",
@@ -60,7 +60,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/johnniewalkerblackbotella_zlag0f.jpg",
   "whiskeys",
   3,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Johnny Walker Red Label",
@@ -69,7 +69,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126875/drinksCo/johnnywalkerrojobotella_jg44ru.webp",
   "whiskeys",
   4,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Johnny Walker Blue Label",
@@ -78,7 +78,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/johnnyazulbotella_qhlt9z.jpg",
   "whiskeys",
   5,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Glenfiddich",
@@ -87,7 +87,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/Glenfiddich12_howdiq.webp",
   "whiskeys",
   6,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Baileys",
@@ -96,7 +96,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126871/drinksCo/baileysbotella_dbvoxb.png",
   "licores",
   7,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Amarula",
@@ -105,7 +105,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/amarula_hekbqg.jpg",
   "licores",
   8,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Jagermeifter",
@@ -114,7 +114,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/jagermeister-350-ml-licoreria-paradiso-937x1000_ozbfbp.jpg",
   "licores",
   9,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Bombay Sapphire",
@@ -123,7 +123,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126871/drinksCo/bombaybotella_wd1acj.webp",
   "gin",
   10,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Tanqueray",
@@ -132,7 +132,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126873/drinksCo/gin-tanqueray_wldk9s.jpg",
   "gin",
   11,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Beefeater",
@@ -141,7 +141,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126873/drinksCo/gin-beefeater-700cc_kkvm6o.jpg",
   "gin",
   12,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Hesperidina",
@@ -150,7 +150,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126874/drinksCo/hesperidina_fia72f.jpg",
   "aperitivos",
   13,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Fernet Branca",
@@ -159,7 +159,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126873/drinksCo/fernet-branca_b8dl3u.jpg",
   "aperitivos",
   14,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Cynar",
@@ -168,7 +168,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126873/drinksCo/cynar_vnil9o.webp",
   "aperitivos",
   15,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 createAddProduct(
   "Campari",
@@ -177,7 +177,7 @@ createAddProduct(
   "https://res.cloudinary.com/dpxe6utid/image/upload/v1668126872/drinksCo/campari_qitapq.jpg",
   "aperitivos",
   16,
-  "20% OFF!"
+  "SALE 20% OFF!"
 );
 
 export const TotalProducts = stockProducts.length;

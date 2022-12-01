@@ -28,6 +28,7 @@ export const CateCardImg = styled.img`
   border-radius: 0.8rem;
   position: relative;
   top: -1.5rem;
+  opacity: 60%;
   /* box-shadow: 2px 4px 8px 2px var(--blanco); */
 `;
 export const CateCardTitle = styled.h2`

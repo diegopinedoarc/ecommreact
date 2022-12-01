@@ -4,7 +4,7 @@ export const ProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   align-items: center;
   gap: 1rem;
   @media only screen and (max-width: 624px) {
