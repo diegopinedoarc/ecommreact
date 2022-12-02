@@ -3,6 +3,7 @@ import CategoriesSection from "../../Components/CategoriesSection/CategoriesSect
 import Hero from "../../Components/Hero/Hero";
 import Ofertas from "../../Components/Ofertas/Ofertas";
 import ProductsSection from "../../Components/ProductsSection/ProductsSection";
+import SubHero from "../../Components/SubHero/SubHero";
 import { HomeWrapper, ProdContainerRef } from "./HomeStyles";
 import { useRef } from "react";
 
@@ -17,7 +18,7 @@ const Home = () => {
   return (
     <HomeWrapper>
       <Hero doScroll={doScroll} />
-
+      <SubHero />
       <Ofertas />
       <CategoriesSection />
       <ProdContainerRef ref={productsRef}>

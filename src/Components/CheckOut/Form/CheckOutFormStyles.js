@@ -22,7 +22,6 @@ export const Form = styled(FormikForm)`
 
 export const CheckoutWrapper2 = styled.div`
   display: flex;
-
   align-items: center;
   flex-direction: column;
   width: 80%;
