@@ -40,7 +40,7 @@ const CheckoutForm = ({ cartItems }) => {
                 id="telefono"
                 placeholder="Telefono"
               >
-                Telefono
+                Teléfono
               </InputForm>
               <InputForm
                 name="location"
